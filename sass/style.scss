@@ -1,0 +1,141 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.all-button {
+  background-color: black;
+  border: 2px solid transparent;
+  color: white;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.all-button:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.container-fluid {
+  max-width: 1400px !important;
+}
+
+.container {
+  max-width: 1200px !important;
+}
+
+nav ul li a {
+  color: white !important;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-button {
+  text-decoration: none;
+  outline: none !important;
+  border: none !important;
+}
+
+.navbar-toggler.nav-button:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header {
+  color: white !important;
+  min-height: calc(100vh - 59.2px);
+  padding: 50px 0;
+
+  ul {
+    gap: 60px !important;
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 67px;
+    max-width: 400px;
+    line-height: 100px;
+    text-transform: capitalize;
+  }
+
+  .text_lorem_header {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+  }
+}
+
+.mrfox_img {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    h1 {
+      font-size: 50px;
+      line-height: 125%;
+    }
+  }
+}
+
+.animatsiya {
+  border-radius: 24px;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-name: top-bottom;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+  @keyframes top-bottom {
+    0% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(20px);
+    }
+  }
+}
+
+.animat_h1 {
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-name: animat_h1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+  @keyframes animat_h1 {
+    0% {
+      transform: translateX(-15px);
+    }
+
+    100% {
+      transform: translateX(15px);
+    }
+  }
+}
